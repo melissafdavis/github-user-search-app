@@ -1,0 +1,37 @@
+.container{
+    background-color: #F6F8FF;
+    font-family: 'Space Mono', monospace;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#devfinder{
+    color:#141D2F;
+    font-weight:bolder;
+    width:75%;
+}
+
+#light-dark{
+    color: #697C9A;
+    width: 20%;
+}
+
+
+.searchbox{
+    background-color:#FEFEFE;
+}
+#search-text{
+    border: none;
+    color: #697C9A;
+    font-family: 'Space Mono', monospace;
+}
+#search-button{
+    background-color: #0079FF;
+    color: #FEFEFE;
+    font-family: 'Space Mono', monospace;
+    border: none;
+}
+
