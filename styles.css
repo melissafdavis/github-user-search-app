@@ -1,7 +1,6 @@
 {
     box-sizing: border-box;
   }
-
 .container{
     /*background-color: #F6F8FF;*/
     /*fix to correct gray color later */
@@ -10,25 +9,20 @@
     display: flex;
     flex-wrap: wrap;
 }
-
 .header{
     display: flex;
     flex-wrap: wrap;
     width: 90%;
 }
-
 #devfinder{
     color:#141D2F;
     font-weight:bolder;
     width:75%;
 }
-
 #light-dark{
     color: #697C9A;
     width: 20%;
 }
-
-
 .searchbox{
     background-color:#FEFEFE;
     margin: 10px;
@@ -36,7 +30,6 @@
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
-   
 }
 #search-text{
     border: none;
@@ -55,7 +48,6 @@
     padding: 5px;
     border-radius: 5px;
 }
-
 .profile{
     background-color: white;
     width: 100%;
@@ -63,62 +55,47 @@
     flex-wrap: wrap;
     /*fix to correct white color later */
 }
-
 .photo-user{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    
 }
-
 .profile-photo{
     width: 25%;
     background-color: yellow;
 }
-
 .user{
     width: 75%;
     background-color: pink;
 }
-
 .bio{
     width: 100%;
     background-color: aqua;
 }
-
 .data{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     background-color: lightgray;
 }
-
 #repos{
     width: 33%;
     display: flex;
     flex-wrap: wrap;
 }
-
 #followers{
     width: 33%;
     display: flex;
     flex-wrap: wrap;
 }
-
 #following{
     width: 33%;
     display: flex;
     flex-wrap: wrap;
 }
-
-
 #repo-label, #repo-number, #followers-label, #followers-number, #following-label, #following-number{
     width: 100%;
 }
-
-
-
 #location, #website, #twitter, #company{
-    width: 100%;
-    
+    width: 100%; 
 }
