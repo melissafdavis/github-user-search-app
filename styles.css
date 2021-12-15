@@ -5,7 +5,7 @@
 .container{
     /*background-color: #F6F8FF;*/
     /*fix to correct gray color later */
-    background-color: gray;
+    background-color: lightgray;
     font-family: 'Space Mono', monospace;
     display: flex;
     flex-wrap: wrap;
@@ -33,52 +33,92 @@
     background-color:#FEFEFE;
     margin: 10px;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
    
 }
 #search-text{
     border: none;
     color: #697C9A;
     font-family: 'Space Mono', monospace;
+    background-image: url('/assets/icon-search.svg');
+    background-repeat:no-repeat;
+    width: 75%;
 }
 #search-button{
     background-color: #0079FF;
     color: #FEFEFE;
     font-family: 'Space Mono', monospace;
     border: none;
+    width: 20%;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .profile{
     background-color: white;
     width: 100%;
-    
+    display: flex;
+    flex-wrap: wrap;
     /*fix to correct white color later */
 }
 
-.user-data{
-    background-color:gray;
-    /*fix to correct white color later */
+.photo-user{
     display: flex;
-    flex-wrap: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.profile-photo{
+    width: 25%;
+    background-color: yellow;
+}
+
+.user{
+    width: 75%;
+    background-color: pink;
+}
+
+.bio{
+    width: 100%;
+    background-color: aqua;
+}
+
+.data{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgray;
 }
 
 #repos{
     width: 33%;
-}
-
-#followers{
-    width: 33%;
-}
-
-#following{
-    width: 33%;
-}
-
-.contact-info{
     display: flex;
     flex-wrap: wrap;
 }
 
-#location, #github, #twitter, #agithub{
-    width: 50%;
-    margin: 0 auto;
+#followers{
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#following{
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#repo-label, #repo-number, #followers-label, #followers-number, #following-label, #following-number{
+    width: 100%;
+}
+
+
+
+#location, #website, #twitter, #company{
+    width: 100%;
+    
 }
