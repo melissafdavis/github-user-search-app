@@ -11,6 +11,7 @@
       margin: 10px auto;
       overflow-x: hidden;
       display: flex;
+      color: #2b3442;
   }
 
  
@@ -80,7 +81,7 @@ width: 5%;
 }
 
 .profile{
-    background-color: white;
+    background-color:#fefefe;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -93,7 +94,6 @@ width: 5%;
 }
 .profile-photo{
     width: 25%;
-    background-color: yellow;
     
 }
 
@@ -101,39 +101,53 @@ width: 5%;
     border-radius: 50%;
     width: 90%;
 }
-.user{
-    width: 75%;
-    background-color: pink;
+#user{
+    font-size: 16px;
+    font-weight: bold;
 }
+
+#username{
+    color: #0079ff;
+    font-size: 12px;
+}
+
+#joined{
+    color: #697C9A;
+    font-size: 14px;
+
+}
+
+
 
 .bio{
     width: 100%;
-    background-color: aqua;
+    background-color:#fefefe;
 }
 .data{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-color: lightgray;
+    background-color: #697c9a;
+    border-radius: 10px;
+    margin: 10px;
 }
-#repos{
-    width: 30%;
+#repos, #followers, #following{
+    width: 33%;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    font-size: 10px;
 }
-#followers{
-    width: 30%;
-    display: flex;
-    flex-wrap: wrap;
-}
-#following{
-    width: 30%;
-    display: flex;
-    flex-wrap: wrap;
-}
+
+
 #repo-label, #repo-number, #followers-label, #followers-number, #following-label, #following-number{
     width: 100%;
+    font-size: 14px;
 }
 #location, #website, #twitter, #company{
     width: 100%; 
+}
+
+.contact-info{
+    background-color:#fefefe;
 }
