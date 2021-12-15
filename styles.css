@@ -1,11 +1,20 @@
+{
+    box-sizing: border-box;
+  }
+
 .container{
-    background-color: #F6F8FF;
+    /*background-color: #F6F8FF;*/
+    /*fix to correct gray color later */
+    background-color: gray;
     font-family: 'Space Mono', monospace;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .header{
     display: flex;
     flex-wrap: wrap;
+    width: 90%;
 }
 
 #devfinder{
@@ -22,6 +31,9 @@
 
 .searchbox{
     background-color:#FEFEFE;
+    margin: 10px;
+    width: 100%;
+   
 }
 #search-text{
     border: none;
@@ -35,3 +47,38 @@
     border: none;
 }
 
+.profile{
+    background-color: white;
+    width: 100%;
+    
+    /*fix to correct white color later */
+}
+
+.user-data{
+    background-color:gray;
+    /*fix to correct white color later */
+    display: flex;
+    flex-wrap: flex;
+}
+
+#repos{
+    width: 33%;
+}
+
+#followers{
+    width: 33%;
+}
+
+#following{
+    width: 33%;
+}
+
+.contact-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#location, #github, #twitter, #agithub{
+    width: 50%;
+    margin: 0 auto;
+}
