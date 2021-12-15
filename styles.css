@@ -1,19 +1,34 @@
-{
+/*{
     box-sizing: border-box;
+  }*/
+
+  html{
+    background-color: #f6f8ff;
+      max-width: 100%;
   }
+  body{
+      width: 90%;
+      margin: 10px auto;
+      overflow-x: hidden;
+      display: flex;
+  }
+
+ 
 .container{
-    /*background-color: #F6F8FF;*/
-    /*fix to correct gray color later */
-    background-color: lightgray;
+    background-color: #f6f8ff;
     font-family: 'Space Mono', monospace;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
+
 .header{
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
+    background-color: pink;
 }
+
 #devfinder{
     color:#141D2F;
     font-weight:bolder;
@@ -23,38 +38,45 @@
     color: #697C9A;
     width: 20%;
 }
+
 .searchbox{
-    background-color:#FEFEFE;
-    margin: 10px;
+    background-color:white;
+    /*margin: 10px;*/
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
+
 }
+
 #search-text{
     border: none;
     color: #697C9A;
+    text-align: right;
     font-family: 'Space Mono', monospace;
     background-image: url('/assets/icon-search.svg');
     background-repeat:no-repeat;
-    width: 75%;
+    width: 80%;
+    background-color: yellow;
 }
 #search-button{
     background-color: #0079FF;
     color: #FEFEFE;
+    
     font-family: 'Space Mono', monospace;
     border: none;
-    width: 20%;
+    width: 15%;
     padding: 5px;
     border-radius: 5px;
 }
+
 .profile{
     background-color: white;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /*fix to correct white color later */
 }
+
 .photo-user{
     display: flex;
     flex-wrap: wrap;
@@ -63,11 +85,18 @@
 .profile-photo{
     width: 25%;
     background-color: yellow;
+    
+}
+
+#photo{
+    border-radius: 50%;
+    width: 90%;
 }
 .user{
     width: 75%;
     background-color: pink;
 }
+
 .bio{
     width: 100%;
     background-color: aqua;
@@ -79,17 +108,17 @@
     background-color: lightgray;
 }
 #repos{
-    width: 33%;
+    width: 30%;
     display: flex;
     flex-wrap: wrap;
 }
 #followers{
-    width: 33%;
+    width: 30%;
     display: flex;
     flex-wrap: wrap;
 }
 #following{
-    width: 33%;
+    width: 30%;
     display: flex;
     flex-wrap: wrap;
 }
