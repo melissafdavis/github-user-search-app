@@ -4,23 +4,27 @@
 
   html{
     background-color: #f6f8ff;
-      max-width: 100%;
-  }
-  body{
-      width: 90%;
-      margin: 10px auto;
+      width: 100%;
       overflow-x: hidden;
-      display: flex;
-      color: #2b3442;
   }
 
- 
+
+  /*body{
+      width: 100%;
+      overflow-x: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      color: #2b3442;
+      background-color: orange;
+  }*/
+
 .container{
     background-color: #f6f8ff;
     font-family: 'Space Mono', monospace;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin: 0 auto;
 }
 
 .header{
@@ -48,13 +52,26 @@ width: 5%;
 
 .searchbox{
     background-color:#fefefe;
-    /*margin: 10px;*/
-    width: 100%;
+    margin: 12px;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 5px;
+    
     border-radius: 10px;
+    /*margin-left: 20px
+    /*border-radius: 10px;
     margin-bottom: 10px;
+    padding: 10px;
+    ;*/
+
+
+   
+    /*background-color:#fefefe;
+    color: #697C9A;
+    font-size: 14px;
+    
+    margin-bottom: 20px;*/
 }
 
 #search-text{
@@ -85,6 +102,7 @@ width: 5%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    border-radius: 10px;
 }
 
 .photo-user{
@@ -92,9 +110,21 @@ width: 5%;
     flex-wrap: wrap;
     width: 100%;
 }
-.profile-photo{
+
+.avatar{
     width: 25%;
-    
+    margin-left: 10px;
+}
+
+img#avatar {
+    border-radius:  50%;
+    width: 100%;
+}
+
+.user{
+    /*margin-left: 10px;*/
+    width: 65%;
+    margin-left: 10px;
 }
 
 #photo{
@@ -113,41 +143,75 @@ width: 5%;
 
 #joined{
     color: #697C9A;
-    font-size: 14px;
+    font-size: 12px;
 
 }
 
 
 
 .bio{
-    width: 100%;
-    background-color:#fefefe;
+    width: 90%;
+    /*background-color:#fefefe;*/
+    color: #697C9A;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
-.data{
-    width: 100%;
+.profile{
+    background-color:#fefefe;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
-    background-color: #697c9a;
-    border-radius: 10px;
-    margin: 10px;
+    margin: 0 auto;
 }
+
+.photo-user{
+    margin-top: 10px;
+}
+
+.data{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f6f8ff;
+    border-radius: 20px;
+}
+
 #repos, #followers, #following{
     width: 33%;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    font-size: 10px;
 }
 
-
-#repo-label, #repo-number, #followers-label, #followers-number, #following-label, #following-number{
+#repo-label,  #followers-label, #following-label {
     width: 100%;
-    font-size: 14px;
+    color: lightgray;
+    font-size: 13px;
+    line-height: 20px;
 }
-#location, #website, #twitter, #company{
+
+#repo-number,#followers-number, #following-number{
+    width: 100%;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+#user-location, #website, #twitter, #company{
     width: 100%; 
+    color: #697C9A;
+    font-size: 10px;
+    padding: 5px;
 }
 
 .contact-info{
-    background-color:#fefefe;
+    /*margin-left: 10px;*/
+    width: 90%;
+    /*background-color:#fefefe;
+    color: #697C9A;
+    font-size: 14px;*/
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
