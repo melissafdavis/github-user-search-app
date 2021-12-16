@@ -24,6 +24,9 @@ var company = document.getElementById('company');
 
 var userData;
 
+var light_dark = document.getElementById('light-dark');
+var header = document.getElementById('header');
+
 //EVENT LISTENERS
 searchButton.addEventListener('click', function(e){
     searchResults = searchInput.value;
@@ -86,7 +89,23 @@ function requestUserRepos(username){
 // Call function passing in 'facebook' as GitHub username
 
 
-//UPDATE PROFILE
+//LIGHT-DARK MODE
+
+light_dark.addEventListener('click', lightDark);
+
+function lightDark (){
+    console.log('lightDark clicked');
+    if (light_dark.className == 'light'){
+        light_dark.className = 'dark';
+        light_dark.value = 'LIGHT'
+        console.log(light_dark.className);
+    }else{
+        light_dark.className ="dark";
+        light_dark.className = 'light';
+        light_dark.value = 'DARK';
+    }
+}
+
 
 
 
