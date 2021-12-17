@@ -13,6 +13,7 @@ var userName = document.getElementById('username');
 
 var bio = document.getElementById('bio');
 
+var repos_box = document.getElementById('repos-box');
 var repos = document.getElementById('repo-number');
 var followers = document.getElementById('followers-number');
 var following = document.getElementById('following-number');
@@ -89,23 +90,60 @@ function requestUserRepos(username){
 // Call function passing in 'facebook' as GitHub username
 
 
-//LIGHT-DARK MODE
+//LIGHT-DARK BUTTON
 
-light_dark.addEventListener('click', lightDark);
+light_dark.addEventListener('click', lightButton);
 
-function lightDark (){
+function lightButton (){
     console.log('lightDark clicked');
-    if (light_dark.className == 'light'){
-        light_dark.className = 'dark';
+    if (light_dark.className == 'light-button'){
+        light_dark.className = 'dark-button';
         light_dark.value = 'LIGHT'
-        console.log(light_dark.className);
+        darkMode();
     }else{
-        light_dark.className ="dark";
-        light_dark.className = 'light';
+        light_dark.className ="dark-button";
+        light_dark.className = 'light-button';
         light_dark.value = 'DARK';
+        lightMode();
     }
 }
 
+//LIGHT-DARK MODE
+//light_dark.addEventListender('click', darkMode);
+
+function darkMode(){
+    var container= document.getElementById('container');
+    var devfinder = document.getElementById('devfinder');
+    var searchbox = document.getElementById('searchbox');
+    var profile = document.getElementById('profile');
+    
+
+    container.classList.add('dark');
+    devfinder.classList.add('dark');
+    light_dark.classList.add('dark');
+    searchbox.classList.add('dark');
+    searchInput.classList.add('dark');
+    profile.classList.add('dark');
+    repos_box.classList.add('dark');
+    user.classList.add('dark');
+    repos.classList.add('dark');
+    followers.classList.add('dark');
+    following.classList.add('dark');
+}
+
+function lightMode(){
+    container.classList.remove('dark');
+    devfinder.classList.remove('dark');
+    light_dark.classList.remove('dark');
+    searchbox.classList.remove('dark');
+    searchInput.classList.remove('dark');
+    profile.classList.remove('dark');
+    repos_box.classList.remove('dark');
+    user.classList.remove('dark');
+    repos.classList.remove('dark');
+    followers.classList.remove('dark');
+    following.classList.remove('dark');
+}
 
 
 

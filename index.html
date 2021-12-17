@@ -12,20 +12,20 @@
   <title>Frontend Mentor | GitHub user search app</title>
 </head>
 <body>
-<div role="container" class="container">
+<div role="container" class="container" id="container">
 
-    <div role="header" class="header">
-        <div role="header-item" id="devfinder">devfinder</div>       
-        <div role="header-item"  id="light-dark">DARK</div> 
-        <img src="assets/icon-moon.svg" id="sun-moon" alt="">     
+    <div role="header" class="header" id="header">
+        <div role="header-item" id="devfinder">devfinder</div> 
+        <input type="button" id="light-dark" class="light-button" value = "DARK">   
+           
     </div>
 
-    <form role="searchbox" class="searchbox"> 
+    <form role="searchbox" class="searchbox" id="searchbox"> 
     <input type="text" id="search-text" placeholder="Search GitHub username...">
     <input type="button" id="search-button" value="Search">
     </form>
 
-    <div class="profile">
+    <div class="profile" id="profile">
 
         <div class="photo-user">
 
@@ -44,7 +44,7 @@
         <div class="bio" id="bio">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. </div>
 
             
-        <div class="data">
+        <div class="data" id="repos-box">
 
             <div id="repos">
             <div id="repo-label">Repos</div>
